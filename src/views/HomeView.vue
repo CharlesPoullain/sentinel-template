@@ -20,7 +20,6 @@ const displayedCardResult = ref([
     amount: 23000000,
     variation: 2.5,
     isPositiveVariation: true,
-    sincePeriod: 'Cette semaine'
   },
   {
     id: '002',
@@ -28,7 +27,6 @@ const displayedCardResult = ref([
     amount: 230,
     variation: 0.5,
     isPositiveVariation: true,
-    sincePeriod: 'Cette semaine'
   },
   {
     id: '003',
@@ -36,7 +34,6 @@ const displayedCardResult = ref([
     amount: 2340,
     variation: 1.5,
     isPositiveVariation: false,
-    sincePeriod: '30 derniers jours'
   },
   {
     id: '004',
@@ -44,7 +41,6 @@ const displayedCardResult = ref([
     amount: 123000,
     variation: 0.5,
     isPositiveVariation: true,
-    sincePeriod: 'Cette semaine'
   },
 ])
 </script>
@@ -72,7 +68,7 @@ const displayedCardResult = ref([
       :amount="card.amount"
       :variation="card.variation"
       :isPositiveVariation="card.isPositiveVariation"
-      :sincePeriod="card.sincePeriod"
+      :sincePeriod="selectedTimeRange.name"
       />
     </div>
   </BaseLayout>
