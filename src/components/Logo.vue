@@ -1,0 +1,40 @@
+<template>
+  <svg
+    width="624"
+    height="624"
+    viewBox="0 0 624 624"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="312" cy="312" r="312" fill="#18181B" />
+    <rect x="338" y="153" width="40" height="132" transform="rotate(90 338 153)" fill="white" />
+    <rect x="601" y="302" width="20" height="112" transform="rotate(90 601 302)" fill="#A1A1AA" />
+    <rect x="601" y="332" width="20" height="112" transform="rotate(90 601 332)" fill="#A1A1AA" />
+    <rect x="147" y="73" width="40" height="321" fill="#8B5CF6" />
+    <rect x="338" y="73" width="40" height="191" transform="rotate(90 338 73)" fill="#8B5CF6" />
+    <rect x="601" y="233" width="40" height="385" transform="rotate(90 601 233)" fill="white" />
+    <rect x="130" y="193" width="40" height="81" transform="rotate(90 130 193)" fill="white" />
+    <rect x="130" y="253" width="40" height="112" transform="rotate(90 130 253)" fill="white" />
+    <rect x="130" y="312" width="40" height="112" transform="rotate(90 130 312)" fill="#A1A1AA" />
+    <rect x="382" y="293" width="19" height="165" transform="rotate(90 382 293)" fill="#A1A1AA" />
+    <rect x="385" y="365" width="19" height="165" transform="rotate(90 385 365)" fill="#A1A1AA" />
+    <rect x="206" y="293" width="19" height="91" fill="#A1A1AA" />
+    <rect x="323" y="298" width="19" height="86" fill="#A1A1AA" />
+    <rect x="601" y="375" width="40" height="204" transform="rotate(90 601 375)" fill="#8B5CF6" />
+    <rect x="338" y="20" width="40" height="112" transform="rotate(90 338 20)" fill="#A1A1AA" />
+    <rect x="130" y="371" width="20" height="112" transform="rotate(90 130 371)" fill="#A1A1AA" />
+    <rect x="206" y="469" width="20" height="130" fill="#A1A1AA" />
+    <rect x="253" y="469" width="20" height="130" fill="white" />
+    <rect x="303" y="469" width="20" height="130" fill="white" />
+    <rect x="338" y="410" width="40" height="306" transform="rotate(90 338 410)" fill="#8B5CF6" />
+    <rect x="396" y="293" width="40" height="292" fill="#8B5CF6" />
+    <rect x="362" y="20" width="40" height="173" fill="#A1A1AA" />
+    <rect x="562" y="153" width="40" height="200" transform="rotate(90 562 153)" fill="#A1A1AA" />
+    <rect x="130" y="469" width="40" height="54" transform="rotate(90 130 469)" fill="#A1A1AA" />
+    <rect x="480" y="93" width="40" height="54" transform="rotate(90 480 93)" fill="#8B5CF6" />
+    <rect x="543" y="461" width="40" height="54" transform="rotate(90 543 461)" fill="#A1A1AA" />
+    <rect x="187" y="574" width="40" height="112" transform="rotate(-180 187 574)" fill="white" />
+    <rect x="382" y="508" width="40" height="40" transform="rotate(-180 382 508)" fill="white" />
+    <rect x="382" y="574" width="40" height="40" transform="rotate(-180 382 574)" fill="white" />
+  </svg>
+</template>
