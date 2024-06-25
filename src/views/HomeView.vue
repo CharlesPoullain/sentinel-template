@@ -19,29 +19,29 @@ const displayedCardResult = ref([
     title: 'Revenue total',
     amount: 23000000,
     variation: 2.5,
-    isPositiveVariation: true,
+    isPositiveVariation: true
   },
   {
     id: '002',
     title: 'Moyenne des commandes',
     amount: 230,
     variation: 0.5,
-    isPositiveVariation: true,
+    isPositiveVariation: true
   },
   {
     id: '003',
     title: 'Nombre de vente',
     amount: 2340,
     variation: 1.5,
-    isPositiveVariation: false,
+    isPositiveVariation: false
   },
   {
     id: '004',
     title: 'Trafic',
     amount: 123000,
     variation: 0.5,
-    isPositiveVariation: true,
-  },
+    isPositiveVariation: true
+  }
 ])
 </script>
 
@@ -60,15 +60,15 @@ const displayedCardResult = ref([
         />
       </div>
     </div>
-    <div class="grid grid-cols-2 gap-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
       <OverviewResultCard
-      v-for="card in displayedCardResult"
-      :key="card.id"
-      :title="card.title"
-      :amount="card.amount"
-      :variation="card.variation"
-      :isPositiveVariation="card.isPositiveVariation"
-      :sincePeriod="selectedTimeRange.name"
+        v-for="card in displayedCardResult"
+        :key="card.id"
+        :title="card.title"
+        :amount="card.amount"
+        :variation="card.variation"
+        :isPositiveVariation="card.isPositiveVariation"
+        :sincePeriod="selectedTimeRange.name"
       />
     </div>
   </BaseLayout>

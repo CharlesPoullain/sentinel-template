@@ -53,7 +53,7 @@ const navigationItems = [
     to: '/'
   },
   {
-    label: 'Evénements',
+    label: 'Evenements',
     icon: 'pi pi-fw pi-calendar',
     to: '/events'
   },
@@ -70,7 +70,7 @@ const navigationItems = [
 ]
 </script>
 <template>
-  <nav class="flex h-full min-h-0 flex-col ">
+  <nav class="flex h-full min-h-0 flex-col">
     <!-- Select App -->
     <div class="card flex justify-center">
       <Button
@@ -118,19 +118,17 @@ const navigationItems = [
     </div>
 
     <!-- Navigation -->
-    <div class="border-t-solid border-t border-zinc-900 mt-4 py-4">
-      <RouterLink
-        v-for="item in navigationItems"
-        :key="item.label"
-        :to="item.to"
-        class="flex justify-start items-center w-full h-12 px-4"
-      >
-          <div class="w-full text-white font-semibold text-lg">
-            <i :class="item.icon" class="mr-4"></i>
-            <span class="text-lg">{{ item.label }}</span>
-          </div>
-      </RouterLink>
-    </div>
+    <ul class="pt-4 px-4 border-t-solid border-t border-zinc-900 m-0 p-0 list-none space-y-2">
+      <li v-for="item in navigationItems" :key="item.label" v-ripple>
+        <RouterLink
+          :to="item.to"
+          class="flex justify-start items-center px-4 no-underline hover:bg-zinc-900 px-2 py-1.5 rounded-lg w-full text-white font-semibold text-lg"
+        >
+          <i :class="item.icon" class="mr-4"></i>
+          <span class="text-base font-medium">{{ item.label }}</span>
+        </RouterLink>
+      </li>
+    </ul>
 
     <!-- Support + Changelog -->
     <div></div>

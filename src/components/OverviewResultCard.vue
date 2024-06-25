@@ -24,8 +24,8 @@ const computedVariation = computed(() => {
     <span class="text-3xl font-semibold">{{ computedAmount }}</span>
     <div class="mt-3 space-x-2">
       <span
-        class="bg-green-400/20 text-green-400 px-1.5 py-0.5 rounded-md font-semibold"
-        :class="{ 'bg-red-400/20 text-red-400': !isPositiveVariation }"
+        class="bg-lime-400/20 text-lime-400 px-1.5 py-0.5 rounded-md font-normal text-sm"
+        :class="{ 'bg-pink-400/20 text-pink-400': !isPositiveVariation }"
       >
         {{ computedVariation }}
       </span>
