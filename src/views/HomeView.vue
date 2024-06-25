@@ -2,6 +2,7 @@
 import BaseLayout from '@/components/BaseLayout.vue'
 import Select from 'primevue/select'
 import OverviewResultCard from '@/components/OverviewResultCard.vue'
+import OverviewRecentOrder from '@/components/OverviewRecentOrder.vue'
 
 import { ref } from 'vue'
 
@@ -70,6 +71,11 @@ const displayedCardResult = ref([
         :isPositiveVariation="card.isPositiveVariation"
         :sincePeriod="selectedTimeRange.name"
       />
+    </div>
+
+    <div class="mt-20">
+      <h2 class="text-base font-medium">Dernières commandes</h2>
+      <OverviewRecentOrder />
     </div>
   </BaseLayout>
 </template>
