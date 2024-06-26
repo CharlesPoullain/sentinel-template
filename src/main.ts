@@ -18,6 +18,9 @@ import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
 import { definePreset } from '@primevue/themes'
 
+import Ripple from 'primevue/ripple'
+app.directive('ripple', Ripple)
+
 app.use(PrimeVue, {
   theme: {
     preset: definePreset(Aura, {

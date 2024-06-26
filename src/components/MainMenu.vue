@@ -35,7 +35,7 @@ const items = ref([
     label: 'Options',
     items: [
       {
-        label: 'Nouvelle Application',
+        label: 'Nouvelle Équipe',
         icon: 'pi pi-plus'
       }
     ]
@@ -106,7 +106,6 @@ const navigationItems = [
           <a v-ripple class="flex items-center" v-bind="props.action">
             <span :class="item.icon" />
             <span>{{ item.label }}</span>
-            <Badge v-if="item.badge" class="ml-auto" :value="item.badge" />
             <span
               v-if="item.shortcut"
               class="ml-auto border border-surface rounded bg-emphasis text-muted-color text-xs p-1"
