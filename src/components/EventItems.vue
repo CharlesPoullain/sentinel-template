@@ -36,8 +36,7 @@ function displayTime(time) {
         <div class="flex flex-col">
           <div v-for="(item, index) in slotProps.items" :key="index">
             <div
-              class="flex flex-col sm:flex-row sm:items-center p-6 gap-4"
-              :class="{ 'border-t border-surface-200 dark:border-surface-700': index !== 0 }"
+              class="flex flex-col sm:flex-row sm:items-center ml-4 pr-6 py-6 gap-4 border-t-zinc-800 b-t-solid"
             >
               <div class="md:w-40 relative">
                 <img

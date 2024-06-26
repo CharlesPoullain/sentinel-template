@@ -1,41 +1,13 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { ProductService } from '@/services/ProductService'
-import DataTable from 'primevue/datatable'
-import Column from 'primevue/column'
-import { useRouter } from 'vue-router'
+import ProductTable from '@/components/ProductTable.vue'
 
-const router = useRouter()
-
-const selectedProduct = ref()
 const products = ref()
 onMounted(() => {
   ProductService.getProductsSmall().then((data) => (products.value = data))
 })
-
-function onRowSelect(event) {
-  router.push(`/orders/${event.data.id}`)
-}
 </script>
 <template>
-  <DataTable
-    id="products-table"
-    v-model:selection="selectedProduct"
-    :value="products"
-    tableStyle="min-width: 50rem"
-    selectionMode="single"
-    dataKey="code"
-    @rowSelect="onRowSelect"
-    size="large"
-  >
-    <Column field="code" header="Code"></Column>
-    <Column field="name" header="Name"></Column>
-    <Column field="category" header="Category"></Column>
-    <Column field="quantity" header="Quantity"></Column>
-  </DataTable>
+  <ProductTable :products />
 </template>
-<style scoped>
-:deep(.p-datatable-column-title) {
-  @apply 'text-zinc-400 font-normal';
-}
-</style>

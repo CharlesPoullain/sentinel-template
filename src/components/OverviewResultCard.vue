@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Tag from 'primevue/tag'
 import FormatNumber from '@/utils/FormatNumber'
 import { computed } from 'vue'
 
@@ -23,12 +24,7 @@ const computedVariation = computed(() => {
     <h3 class="my-3 text-base font-medium">{{ title }}</h3>
     <span class="text-3xl font-semibold">{{ computedAmount }}</span>
     <div class="mt-3 space-x-2">
-      <span
-        class="bg-lime-400/20 text-lime-400 px-1.5 py-0.5 rounded-md font-normal text-sm"
-        :class="{ 'bg-pink-400/20 text-pink-400': !isPositiveVariation }"
-      >
-        {{ computedVariation }}
-      </span>
+      <Tag :value="computedVariation" :severity="isPositiveVariation ? 'success' : 'danger'" />
       <span class="text-zinc-500 text-xs">{{ sincePeriod }}</span>
     </div>
   </div>
