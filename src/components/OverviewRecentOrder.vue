@@ -1,13 +1,13 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { ProductService } from '@/services/ProductService'
-import ProductTable from '@/components/ProductTable.vue'
+import { OrderService } from '@/services/OrderService'
+import OrderTable from '@/components/OrderTable.vue'
 
-const products = ref()
+const orders = ref()
 onMounted(() => {
-  ProductService.getProductsSmall().then((data) => (products.value = data))
+  OrderService.getOrdersSmall().then((data) => (orders.value = data))
 })
 </script>
 <template>
-  <ProductTable :products />
+  <OrderTable :orders />
 </template>

@@ -2,7 +2,7 @@ export const EventService = {
   getEventsData() {
     return [
       {
-        id: '1000',
+        id: '1',
         code: 'f230fh0g3',
         name: 'Jazz Concert',
         description: 'A smooth evening of jazz music.',
@@ -14,7 +14,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1001',
+        id: '2',
         code: 'nvklal433',
         name: 'Rock Festival',
         description: 'A weekend of rock and roll.',
@@ -26,7 +26,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1002',
+        id: '3',
         code: 'zz21cz3c1',
         name: 'Art Exhibition',
         description: 'A display of contemporary art.',
@@ -38,7 +38,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1003',
+        id: '4',
         code: '244wgerg2',
         name: 'Tech Conference',
         description: 'A gathering of tech enthusiasts.',
@@ -50,7 +50,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1004',
+        id: '5',
         code: 'h456wer53',
         name: 'Food Festival',
         description: 'A day of gourmet food and wine.',
@@ -62,7 +62,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1005',
+        id: '6',
         code: 'av2231fwg',
         name: 'Film Premiere',
         description: 'The premiere of an anticipated movie.',
@@ -74,7 +74,7 @@ export const EventService = {
         status: 'closed'
       },
       {
-        id: '1006',
+        id: '7',
         code: 'bib36pfvm',
         name: 'Dance Show',
         description: 'An evening of contemporary dance.',
@@ -86,7 +86,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1007',
+        id: '8',
         code: 'mbvjkgip5',
         name: 'Theater Play',
         description: 'A dramatic theater play.',
@@ -98,7 +98,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1008',
+        id: '9',
         code: 'vbb124btr',
         name: 'Comedy Show',
         description: 'An evening of stand-up comedy.',
@@ -110,7 +110,7 @@ export const EventService = {
         status: 'open'
       },
       {
-        id: '1009',
+        id: '10',
         code: 'cm230f032',
         name: 'Science Fair',
         description: 'A showcase of scientific innovations.',

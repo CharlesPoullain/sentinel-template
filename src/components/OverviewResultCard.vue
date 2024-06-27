@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Tag from 'primevue/tag'
-import FormatNumber from '@/utils/FormatNumber'
+import { amountFormat } from '@/utils/FormatNumber'
 import { computed } from 'vue'
 
 const props = defineProps({
@@ -12,7 +12,7 @@ const props = defineProps({
 })
 
 const computedAmount = computed(() => {
-  return `${FormatNumber.amountFormat(props.amount || 0)}€`
+  return `${amountFormat(props.amount || 0)}€`
 })
 
 const computedVariation = computed(() => {

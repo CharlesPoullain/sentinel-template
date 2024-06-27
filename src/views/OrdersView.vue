@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import BaseLayout from '@/components/BaseLayout.vue'
-import { ProductService } from '@/services/ProductService'
+import { OrderService } from '@/services/OrderService'
 import { ref, onMounted } from 'vue'
-import ProductTable from '@/components/ProductTable.vue'
+import OrderTable from '@/components/OrderTable.vue'
 import Button from 'primevue/button'
 
-const products = ref()
+const orders = ref()
 onMounted(() => {
-  ProductService.getProducts().then((data) => (products.value = data))
+  OrderService.getOrders().then((data) => (orders.value = data))
 })
 </script>
 
@@ -20,6 +20,6 @@ onMounted(() => {
       </div>
     </div>
 
-    <ProductTable :products />
+    <OrderTable :orders />
   </BaseLayout>
 </template>

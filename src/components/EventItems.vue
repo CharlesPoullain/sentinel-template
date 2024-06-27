@@ -3,6 +3,7 @@ import DataView from 'primevue/dataview'
 import Tag from 'primevue/tag'
 import { EventService } from '@/services/EventService'
 import { ref, onMounted } from 'vue'
+import { displayDate, displayTime } from '@/utils/Date'
 
 const events = ref()
 onMounted(() => {
@@ -11,21 +12,6 @@ onMounted(() => {
 
 function getImageUrl(name) {
   return `/assets/events/${name}`
-}
-
-function displayDate(date) {
-  return new Date(date).toLocaleDateString('en-US', {
-    month: 'short',
-    day: '2-digit',
-    year: 'numeric'
-  })
-}
-
-function displayTime(time) {
-  return new Date(time).toLocaleTimeString('en-US', {
-    hour: '2-digit',
-    minute: '2-digit'
-  })
 }
 </script>
 
