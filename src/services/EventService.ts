@@ -134,5 +134,10 @@ export const EventService = {
 
   getEvents() {
     return Promise.resolve(this.getEventsData())
+  },
+
+  getEvent(id: string | number) {
+    const eventId = String(id)
+    return Promise.resolve(this.getEventsData().find((event) => event.id === eventId))
   }
 }
